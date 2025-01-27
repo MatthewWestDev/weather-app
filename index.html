@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <h1>Simple Weather</h1>
+      <p>Text-based weather for any location</p>
+      <form>
+        <label for="location-search">Enter postal code or city name</label>
+        <input type="text" id="location-search" />
+        <select name="units" id="units">
+          <option value="metric">Celsius</option>
+          <option value="us">Fahrenheit</option>
+        </select>
+        <button type="submit" id="submit">Get the Weather</button>
+      </form>
+    </header>
+    <main>
+      <h2 class="location"></h2>
+      <h3 class="description"></h3>
+      <p class="weather-report"></p>
+    </main>
+  </body>
+</html>
