@@ -7,8 +7,22 @@
   </head>
   <body>
     <header>
-      <h1>Good Stuff is Happnin'</h1>
+      <h1>Simple Weather</h1>
+      <p>Text-based weather for any location</p>
+      <form>
+        <label for="location-search">Enter postal code or city name</label>
+        <input type="text" id="location-search" />
+        <select name="units" id="units">
+          <option value="metric">Celsius</option>
+          <option value="us">Fahrenheit</option>
+        </select>
+        <button type="submit" id="submit">Get the Weather</button>
+      </form>
     </header>
-    <main></main>
+    <main>
+      <h2 class="location"></h2>
+      <h3 class="description"></h3>
+      <p class="weather-report"></p>
+    </main>
   </body>
 </html>
